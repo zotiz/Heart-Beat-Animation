@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@700&family=Merriweather+Sans&family=Permanent+Marker&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500&family=Roboto:wght@300;400;500;900&display=swap');
+.heart-beating {
+  width: 500px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: aqua;
+  border-radius:20px;
+  box-shadow: 0 0 20px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.heart {
+ position: absolute;
+ top:18px;
+ color: red;
+ font-family: 'Fasthand', cursive;
+ font-size: 26px;
+ font-weight: bold;
+ animation:heartBeating 1.6s infinite;
+}
+.heart img {
+  display: block;
+  color: red;
+  width: 64px;
+  height:100%;
+  position:absolute;
+  top:1px;
+  left:-60px;
+
+}
+.hb {
+  padding-top: 40px;
+  width: 160px;
+  animation-name: heartBeating;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartBeating {
+  0% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 1;
+    transform: scale3d(1.2,1.2,3);
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
